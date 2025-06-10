@@ -1,0 +1,39 @@
+nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 6px 8px;
+  border-radius: 30px;
+  background-color: white;
+  color: #2980b9;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #ffffff22;
+  color: white;
+  border-color: white;
+  text-decoration: none;
+}
+
+footer a {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px 5px;
+  border-radius: 25px;
+  background-color: black;
+  color: #2980b9;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid #ccc;
+}
+
+footer a:hover {
+  background-color: #2980b9;
+  color: white;
+  border-color: #2980b9;
+  text-decoration: none;
+}
