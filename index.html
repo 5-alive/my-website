@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>5 Alive - Empowerment and Advocacy</title>
+  <link rel="icon" href="5 Alive Icon~2.jpg" type="image/x-icon" />
+
+  <style>
+    /* Reset & global */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: #009c5b;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #007a45;
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #009c5b;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      font-size: 1rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #009c5b;
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #009c5b 0%, #007a45 100%);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      box-shadow: inset 0 0 80px rgb(0 0 0 / 0.2);
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+    }
+
+    .hero button {
+      background-color: #ff1e56;
+      border: none;
+      color: white;
+      font-size: 1.3rem;
+      padding: 0.8rem 2.2rem;
+      border-radius: 40px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(255, 30, 86, 0.5);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-weight: 700;
+    }
+
+    .hero button:hover {
+      background-color: #ff7e5f;
+      transform: scale(1.05);
+    }
+
+    /* Main content */
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    main h3 {
+      font-size: 1.8rem;
+      color: #009c5b;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      border-bottom: 3px solid #009c5b;
+      padding-bottom: 0.3rem;
+    }
+
+    main p, main ul {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    main ul {
+      list-style: disc inside;
+      margin-left: 1.2rem;
+    }
+
+    main ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    /* Dynamic content */
+    .dynamic-content {
+      background-color: #e8f5e9;
+      border: 2px solid #009c5b;
+      border-radius: 12px;
+      padding: 1.8rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 156, 91, 0.15);
+    }
+
+    .dynamic-content p {
+      font-size: 1.15rem;
+      color: #004d23;
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      user-select: none;
+    }
+
+    footer a {
+      color: #4caf50;
+      margin: 0 0.5rem;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      color: #81c784;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>5 Alive.org</h1>
+  <nav>
+     <a href="page 24.html" target="_blank">Our Team</a>
+    <a href="page 22.html" target="_blank">5 Alive Community-Based</a>
+    <a href="page 23.html" target="_blank">5 Alive Initiatives</a>
+    <a href="page 21.html" target="_blank">Partnering for Progress</a>
+    <a href="page 26.html" target="_blank">The Road so Far</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Showcasing the Impact of 5 Alive</h2>
+  <p>Empowering LGBTQ+ communities in Kenya through advocacy, health, and economic empowerment.</p>
+  <button onclick="changeContent()">Learn More</button>
+
+  <div class="dynamic-content" id="content">
+    <p>5 Alive is now expanding its efforts to combat climate change by creating green jobs and encouraging sustainable practices...</p>
+  </div>
+</section>
+
+<main>
+  <h3>Empowering the LGBTQ+ Community: 5 Alive's Commitment to Equity and Inclusion</h3>
+  <p>In the face of the COVID-19 pandemic and changing social landscapes, 5 Alive Development Community-Based Organization emerged as a beacon of hope, dedicated to tackling urgent issues faced by the LGBTQ+ community in Gilgil, Nakuru, and Narok County, Kenya. Founded in 2020 and officially registered in 2023, 5 Alive has been steadfast in its mission to create a more equitable and inclusive society.</p>
+  <p>Driven by a deep commitment to promoting equality and fair treatment, 5 Alive's focus areas include HIV prevention and management, improving access to healthcare services, and preventing gender-based violence within the LGBTQ+ community. Through their continuous efforts and dedication, they have made a significant impact on the lives of many individuals and families.</p>
+  <p>Despite the challenges faced, 5 Alive remains unwavering in its efforts to fight for the rights of LGBTQ+ individuals. By providing a range of resources and assistance, including support groups and counseling services, they have created a safe and supportive space for the community. Their work serves as a beacon of hope, reminding everyone that they are not alone in their struggles.</p>
+
+  <h3>Advocacy</h3>
+  <p>Through our advocacy projects, such as community seminars, workshops, and paralegal trainings, we aim to empower communities by increasing their knowledge of their rights and encouraging their active participation in voicing their desires and needs. Our commitment lies in championing causes that are of utmost significance to our community. Our primary mission is to empower and amplify the voices of those who have been unheard, while actively working towards achieving equality and justice for all. We warmly invite you to join us in our collective efforts to make a meaningful and positive impact.</p>
+
+  <h3>Advocacy & Youth Engagement</h3>
+  <p>5 Alive Development Organization is a non-profit dedicated to empowering youth and marginalized communities in Nakuru and Narok counties. Established in 2020 and registered in 2023, our vision is to advocate for the well-being of young people aged 15–24 through several key initiatives.</p>
+
+  <ul>
+    <li><b>Tackling Universal Health Coverage:</b> Increasing access to healthcare information on sexual health and HIV prevention to address early pregnancies and reduce infections among youth.</li>
+    <li><b>Advocacy:</b> Amplifying the voices of young people and advocating for their inclusion in decision-making processes that affect their lives.</li>
+    <li><b>Economic Empowerment:</b> Equipping youth with practical skills like barbering, salon services, farming, and carpentry to address unemployment and resource access challenges.</li>
+    <li><b>HIV Prevention and Management:</b> Visiting schools, communities, and churches to promote HIV prevention, abstinence, family planning, and substance abuse awareness among youth.</li>
+    <li><b>Expanding Initiatives:</b> Continuously exploring new ways to support the youth and marginalized communities in Nakuru and Narok counties.</li>
+  </ul>
+</main>
+
+<footer>
+  <p><!--
+         <a href="page 1.html" target="_blank">Our Team</a>  |
+    <a href="page 2.html" target="_blank">5 Alive Community-Based... </a> |
+    <a href="page 4.html" target="_blank">5 Alive Community Initiatives </a> |
+    <a href="page 5.html" target="_blank">Partnering for Progress </a> |
+    <a href="page 26.html" target="_blank">The Road So Far </a>
+  /--></p>
+  <p>&copy; 2025 5 Alive Development Community-Based Organisation of Kenya. All rights reserved.</p>
+</footer>
+
+<script>
+  function changeContent() {
+    const newContent = `
+      <p>5 Alive Development Community-Based Organization is dedicated to advocating for community development and eradicating poverty. We are proud to showcase a diverse range of projects and activities that highlight our commitment to education, health services, and improving the lives of infants, preschool children, teenagers, and patients with chronic, non-communicable diseases.</p>
+    `;
+    document.getElementById('content').innerHTML = newContent;
+  }
+</script>
+
+</body>
+</html>
+          
+
+
+
