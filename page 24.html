@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Team</title>
+  <link rel="icon" href="5 Alive Icon~2.jpg" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: rgb(230, 250, 241);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #feffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 2.4rem;
+      letter-spacing: 1.2px;
+      color: #009c5b;
+    }
+
+    a {
+      text-decoration: none;
+      color: #009c5b;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #007a45;
+    }
+
+    header, footer {
+      width: 100%;
+      background-color: #183112;
+      color: #009c5b;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 0.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .line {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .member-card {
+      background: fffff;
+      border: 2px solid #1e8526;
+      color: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 5px 15px rgba(0, 156, 91, 0.15);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .member-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .member-photo {
+      border-radius: 70%;
+      object-fit: cover;
+      border: 4px solid #009c5b;
+      margin-bottom: 15px;
+      background: #c5a1a1;
+      flex-shrink: 0;
+    }
+
+    .member-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+      color: #009c5b;
+    }
+
+    .member-role {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #555;
+      letter-spacing: 0.5px;
+    }
+
+    .line1 .member-photo {
+      width: 160px;
+      height: 160px;
+    }
+    .line2 .member-photo {
+      width: 110px;
+      height: 110px;
+    }
+    .line3 .member-photo {
+      width: 130px;
+      height: 130px;
+    }
+
+    .line1 .member-card {
+      width: 380px;
+    }
+    .line2 .member-card {
+      width: 340px;
+    }
+    .line3 .member-card {
+      width: 230px;
+    }
+
+    @media (max-width: 700px) {
+      .line {
+        gap: 25px;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Our Team</h1>
+</header>
+
+<div class="line line1" id="line1"></div>
+<div class="line line2" id="line2"></div>
+<div class="line line3" id="line3"></div>
+
+<footer>
+  <p>
+    <a href="page 22.html" target="_blank">5 Alive Community-Based</a> |
+    <a href="page 20.html" target="_blank"> Showcasing the Impact of 5 Alive</a> |
+    <a href="page 23.html" target="_blank">5 Alive Community Initiatives</a> |
+    <a href="page 21.html" target="_blank">Partnering for Progress</a> |
+    <a href="page 26.html" target="_blank">The Road So Far</a>
+  </p>
+  <p>
+    5-Alive Development Community-Based Organization is a nonprofit dedicated to serving marginalized populations. Our programs support LGBTQIA+ rights, adolescent girls, mental health, elderly care, and HIV prevention.
+  </p>
+  <p>&copy; 2025 5 Alive Development Community-Based Organisation of Kenya. All rights reserved.</p>
+</footer>
+
+<script>
+  const chief = {
+    name: "TEDDY MWANGI",
+    role: "<b>Executive Director and Founder</b><br/>Experienced in community health and HIV prevention, driving the organization's mission and partnerships.",
+    photo: "IMG-20250508-WA0021_1.jpg"
+  };
+
+  const seniorBoard = [
+    {
+      name: "KARANJA KELVIN",
+      role: "<b>Board Secretary</b><br/>Focuses on data-driven health strategies, HIV response, and access to care.",
+      photo: "kaerresh.jpg"
+    },
+    {
+      name: "NANJALA KABIRA",
+      role: "<b>Board Treasurer</b><br/>Expert in mental health and psychosocial integration across programs.",
+      photo: "pkondj_1.png"
+    },
+    {
+      name: "ALEX MAC",
+      role: "<b>Co-Founder & Programs Lead</b><br/>Ensures interventions are community-centric and inclusive.",
+      photo: "Untitled_1.jpg"
+    }
+  ];
+
+  const boardMembers = [
+    {
+      name: "VERONICAH NJERI",
+      role: "<b>Community Engagement & Advocacy</b><br/>Mobilizes communities and shapes effective advocacy strategies.",
+      photo: "vrffddtt_1.png"
+    },
+    {
+      name: "KAMOTHO ELIZABETH",
+      role: "<b>Vice Secretary</b><br/>Leads gender equity and social support programs.",
+      photo: "elisssghdgdy_1.png"
+    },
+    {
+      name: "IMINZA DOREEN",
+      role: "<b>Vice Chair & Clinical Officer</b><br/>Advances healthcare solutions for vulnerable groups.",
+      photo: "Generated-Image-March-18-2025---1_03PM_1.png"
+    },
+    {
+      name: "AYUMAH LOURINE",
+      role: "<b>Board Chair</b><br/>Guides strategic direction and leads LGBTQIA+ advocacy.",
+      photo: "Designer_1.jpeg"
+    }
+  ];
+
+  function createMemberCard(member) {
+    const card = document.createElement('div');
+    card.className = 'member-card';
+    card.innerHTML = `
+      <img src="${member.photo}" alt="${member.name}" class="member-photo" />
+      <div class="member-name">${member.name}</div>
+      <div class="member-role">${member.role}</div>
+    `;
+    return card;
+  }
+
+  document.getElementById('line1').appendChild(createMemberCard(chief));
+  seniorBoard.forEach(member => document.getElementById('line2').appendChild(createMemberCard(member)));
+  boardMembers.forEach(member => document.getElementById('line3').appendChild(createMemberCard(member)));
+</script>
+
+</body>
+</html>

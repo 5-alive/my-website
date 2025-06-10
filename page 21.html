@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="5 Alive Icon~2.jpg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partnering for Progress</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #FAEBD7;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #d63447;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+      color: #9b1c28;
+      outline: none;
+    }
+
+    /* Header */
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 25px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      position: relative;
+      user-select: none;
+    }
+    header img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(255 255 255 / 0.7);
+    }
+    header h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      user-select: text;
+    }
+
+    /* Main Section */
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      background: white;
+      margin: 40px auto;
+      padding: 40px 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    main h2 {
+      color: #0077cc;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 1.75rem;
+      border-bottom: 3px solid #d63447;
+      padding-bottom: 6px;
+      margin-top: 30px;
+    }
+    main p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      padding: 40px 20px 20px;
+      font-size: 14px;
+      user-select: none;
+    }
+    footer .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    footer .footer-column {
+      flex: 1 1 200px;
+      min-width: 200px;
+    }
+    footer h4 {
+      color: #eee;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    footer p {
+      line-height: 1.5;
+      color: #bbb;
+    }
+    footer a {
+      color: #ccc;
+      display: inline-block;
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+    footer a:hover {
+      color: #d63447;
+      text-decoration: underline;
+    }
+
+    /* Social icons container */
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      filter: brightness(0.8);
+      transition: filter 0.3s ease;
+    }
+    .social-icons a:hover {
+      filter: brightness(1);
+    }
+    .social-icons img,
+    .social-icons svg {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+
+    /* Copyright */
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #777;
+      user-select: text;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      main {
+        margin: 30px 15px;
+        padding: 30px 20px;
+      }
+      footer .footer-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="5 Alive Icon~2.jpg" alt="5 Alive Logo" />
+    <h1>Partnering for Progress</h1>
+  </header>
+
+  <main>
+    <h2>Working Together for Change</h2>
+    <p>We recognize the importance of collaboration in bringing about long-term change. That is why we are proud to form partnerships with esteemed organizations like Onyx Development Organization, Kenya Works, 410, AGATHA Amani House and MAMA HOPE. Together, we aim to amplify our impact through various initiatives, including organized workshops, community education, and the provision of trainers and materials. By joining our network, you can broaden your horizons and contribute to our collective efforts.</p>
+
+    <h2>Join Us in Creating a Brighter Future</h2>
+    <p>Become a part of the 5 Alive community and make a difference today. Together, we can create a brighter future for all. Join our movement and be a catalyst for change.</p>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+
+      <!-- Company Info -->
+      <div class="footer-column">
+        <h4>5-Alive.org</h4>
+        <p>Empowering communities through education, health, advocacy, and inclusion.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <a href="page 26.html" target="_blank">The Road So Far</a><br />
+        <a href="page 22.html" target="_blank">5 Alive Development Community...</a><br />
+        <a href="page 23.html" target="_blank">5 Alive Community Initiatives</a><br />
+        <a href="page 20.html" target="_blank">Show Casing The Impact...</a><br />
+        <a href="page 24.html" target="_blank">Our Team</a>
+      </div>
+
+      <!-- Connect With Us -->
+      <div class="footer-column">
+        <h4>Connect With Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100094907965040" target="_blank" aria-label="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" />
+          </a>
+          <a href="mailto:5alive.org@gmail.com" target="_blank" aria-label="Email">
+            <img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Gmail" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=3r6FaNMD3qo" target="_blank" aria-label="YouTube">
+            <img src="https://cdn-icons-png.flaticon.com/24/1384/1384060.png" alt="YouTube" />
+          </a>
+          <a href="tel:+254710104646" target="_blank" aria-label="Call Us">
+            <img src="https://cdn-icons-png.flaticon.com/24/724/724664.png" alt="Phone" />
+          </a>
+          <a href="https://wa.me/254712428999" target="_blank" aria-label="WhatsApp">
+            <img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" />
+          </a>
+          <a href="https://www.linkedin.com/in/teddy-mwangi-a35b2a326/" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#0A66C2" viewBox="0 0 24 24" width="24" height="24"></a>
+              <path d="M20.45 20.45h-3.55v-5.4c0-1.29-.03-2.95-1.8-2.95-1.81 0-2.09 1.41-2.09 2.86v5.49H9.45V9h3.41v1.56h.05c.47-.89 1.62-1.82 3.34-1.82 3.57 0 4.23 2.35 4.23 5.4v6.31zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.97 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0z"/>
+            </svg>
+        </div>
+      </div>
+ </div>
+
+    <div style="max-width: 1200px; margin: 30px auto 10px; text-align: center; font-size: 14px; color: #999;">
+      <p>
+        5-Alive Development Community-Based Organization is a nonprofit, community-driven initiative committed to advancing the wellbeing of marginalized populations.
+        Guided by a holistic and rights-based approach, the organization delivers targeted and impactful support to vulnerable groups.
+        Our work focuses on providing mental health assistance to young adults, promoting and protecting the rights of the LGBTQIA+ community,
+        offering care and support to the elderly, empowering adolescent girls and young women (AGYW) through tailored programs,
+        and preventing the spread of HIV through comprehensive education, testing, and sustained community-based support.
+      </p>
+    </div>
+
+    <div class="copyright">
+      © 2025 5-Alive Development Community-Based Organisation of Kenya. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

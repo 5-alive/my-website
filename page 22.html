@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="5 Alive Icon~2.jpg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>5-ALIVE DEVELOPMENT COMMUNITY-BASED ORGANISATION OF KENYA</title>
+  <style>
+    /* Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Sticky header */
+    header {
+      position: sticky;
+      top: 0;
+      background: #00796b;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
+      z-index: 100;
+    }
+
+    /* Main container */
+    main {
+      max-width: 1100px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    main h2 {
+      text-align: center;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #004d40;
+    }
+    main h3 {
+      text-align: center;
+      font-weight: 600;
+      color: #00796b;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* Grid for objectives */
+    .objectives-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+
+    /* Each objective card */
+    .objective-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+      padding: 1.8rem 2rem 2rem;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .objective-card:hover {
+      box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+      transform: translateY(-6px);
+    }
+
+    .objective-card > .summary {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #004d40;
+      margin-bottom: 1rem;
+      min-height: 60px;
+    }
+
+    .objective-card h4 {
+      margin: 0.75rem 0 0.4rem 0;
+      color: #d32f2f;
+      font-size: 1.2rem;
+    }
+    .objective-card h5 {
+      margin: 0.3rem 0 0.5rem 0;
+      color: #c2185b;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .objective-card p {
+      font-size: 0.95rem;
+      color: #444;
+      margin: 0 0 0.75rem 0;
+      flex-grow: 1;
+    }
+
+    /* Button */
+    .dynamic-button {
+      background: #388e3c;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 0.9rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 3rem auto 1rem;
+      display: block;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgb(56 142 60 / 0.6);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    .dynamic-button:hover {
+      background: #2e7d32;
+      box-shadow: 0 7px 20px rgb(46 125 50 / 0.8);
+    }
+
+    #message {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-top: 1rem;
+      color: #d32f2f;
+      min-height: 2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #004d40;
+      color: #e0f2f1;
+      padding: 3rem 1rem 2rem;
+      font-size: 0.9rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    footer .footer-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+    footer .footer-section {
+      flex: 1 1 250px;
+      min-width: 200px;
+    }
+    footer h3 {
+      color: #a7ffeb;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    footer p, footer ul, footer a {
+      color: #cde8e2;
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    footer ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    footer ul li {
+      margin-bottom: 0.6rem;
+    }
+    footer a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+    footer .social-links a {
+      margin-right: 1rem;
+      font-size: 1.1rem;
+      color: #a7ffeb;
+      text-decoration: none;
+    }
+    footer .social-links a:hover {
+      color: #ffffff;
+    }
+    footer .copyright {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #a7ffeb;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      .objective-card > .summary {
+        min-height: auto;
+      }
+      main h2 {
+        font-size: 1.5rem;
+      }
+      main h3 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>5-ALIVE DEVELOPMENT COMMUNITY-BASED ORGANISATION OF KENYA</header>
+
+<main>
+  <h2>OUR OBJECTIVES</h2>
+  <h3>Empowering Communities for a Better Tomorrow</h3>
+
+  <div class="objectives-grid">
+    <article class="objective-card">
+      <div class="summary">Prevent the spread of HIV through education, testing and support.</div>
+      <h4>HIV Preventive Measure</h4>
+      <h5>Education and Awareness</h5>
+      <p>We conduct workshops and awareness campaigns to educate the community about HIV-prevention strategies.</p>
+      <h5>Testing and Counselling</h5>
+      <p>We offer free and confidential HIV testing and counselling services, providing support and guidance to those affected.</p>
+      <h5>Distribution of Resources</h5>
+      <p>We distribute condoms, educational materials, and other necessary resources to promote safe practices within the community.</p>
+    </article>
+
+    <article class="objective-card">
+      <div class="summary">Support adolescent girls and young women (AGYW) with reproductive health and gender-based violence issues.</div>
+      <h4>Adolescent Girls and Young Women [AGYW]</h4>
+      <h5>Education and Empowerment</h5>
+      <p>Our organization aims to empower adolescent girls and young women (AGYW) by providing educational programs, vocational training, and mentorship opportunities.</p>
+      <h5>Health and Well-being</h5>
+      <p>Our healthcare services are aimed at providing a holistic approach to healthcare.</p>
+      <h5>Leadership Development</h5>
+      <p>Join us in our leadership development programs and help shape a better tomorrow.</p>
+    </article>
+
+    <article class="objective-card">
+      <div class="summary">Provide support for the elderly with social isolation, mental health, and healthcare access.</div>
+      <h4>Support for the Elderly</h4>
+      <h5>Inclusive Programs</h5>
+      <p>We offer a wide range of social activities and health services for the elderly.</p>
+    </article>
+
+    <article class="objective-card">
+      <div class="summary">Offer mental health assistance to young adult males and boys through counseling and group therapy sessions.</div>
+      <h4>Mental Health Services</h4>
+      <h5>Psychological Support</h5>
+      <p>We provide an extensive range of counseling services and support groups.</p>
+    </article>
+
+    <article class="objective-card">
+      <div class="summary">Promote LGBTQIA+ rights and support marginalized communities through advocacy and education.</div>
+      <h4>Transgender, Bisexuals, Queers and Key Populations</h4>
+      <h5>Transgender Rights</h5>
+      <p>We advocate for the rights and acceptance of transgender individuals.</p>
+    </article>
+  </div>
+
+  <button class="dynamic-button" onclick="displayMessage()">Click for a Message</button>
+  <p id="message"></p>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <section class="footer-section">
+      <h3>Our Motive</h3>
+      <p>
+        5-Alive Development Community-Based Organization is a nonprofit, community-driven initiative committed to advancing the wellbeing of marginalized populations.
+        Guided by a holistic and rights-based approach, the organization delivers targeted and impactful support to vulnerable groups.
+        Our work focuses on providing mental health assistance to young adults, promoting and protecting the rights of the LGBTQIA+ community,
+        offering care and support to the elderly, empowering adolescent girls and young women (AGYW) through tailored programs,
+        and preventing the spread of HIV through comprehensive education, testing, and sustained community-based support.
+      </p>
+    </section>
+
+    <section class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="page 24.html" target="_blank">Our Team</a></li>
+        <li><a href="page 20.html" target="_blank">Showcasing The Impact...</a></li>
+        <li><a href="page 23.html" target="_blank">5 Alive Community Initiatives</a></li>
+        <li><a href="page 21.html" target="_blank">Partnering for Progress</a></li>
+        <li><a href="page 26.html" target="_blank">The Road so Far</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-section">
+      <h3>Reach Us</h3>
+      <p>
+   📞 0710104646 <br />
+        <a href="mailto:teddymwangi.5alive.com" target="_blank">Donate</a>
+      </p>
+    </section>
+
+    <section class="footer-section social-links">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com/profile.php?id=100094907965040" target="_blank" Facebook">🌐 Facebook</a>
+    </section>
+  </div>
+  <div class="copyright">
+    © 2025 5-Alive Development Community-Based Organization of Kenya. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  function displayMessage() {
+    const messages = [
+      "Thank you for supporting our community initiatives!",
+      "Together, we can make a difference!",
+      "Your involvement is invaluable to us!",
+    ];
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    document.getElementById("message").textContent = messages[randomIndex];
+  }
+</script>
+
+</body>
+</html>
