@@ -46,7 +46,7 @@
       justify-content: space-between;
     }
 
-    header h1 {
+    header h1, h4 {
       font-size: 1.8rem;
       color: #009c5b;
       margin: 0;
@@ -151,7 +151,7 @@
       border-radius: 12px;
       padding: 1.8rem;
       margin-bottom: 3rem;
-      text-align: center;
+      text-align: left;
       box-shadow: 0 0 10px rgba(0, 156, 91, 0.15);
     }
 
@@ -220,7 +220,7 @@
   <button onclick="changeContent()">Learn More</button>
 
   <div class="dynamic-content" id="content">
-    <p>5 Alive is now expanding its efforts to combat climate change by creating green jobs and encouraging sustainable practices...</p>
+    <p></p>
   </div>
 </section>
 
@@ -259,7 +259,35 @@
 <script>
   function changeContent() {
     const newContent = `
-      <p>5 Alive Development Community-Based Organization is dedicated to advocating for community development and eradicating poverty. We are proud to showcase a diverse range of projects and activities that highlight our commitment to education, health services, and improving the lives of infants, preschool children, teenagers, and patients with chronic, non-communicable diseases.</p>
+      <p>Welcome to 5-Alive – Where Equity Meets Action<br/>
+We warmly welcome you — philanthropists, donors, and changemakers — to 5-Alive Development Community-Based Organization, a youth-led movement rooted in resilience, driven by purpose, and committed to transforming lives across Kenya.</p>
+
+<p>5 Alive was founded in 2020 and officially registered as a Community-Based Organization (CBO) in 2023, 5-Alive was born out of a simple but powerful idea: that no one — regardless of gender identity, health status, or social background — should be left behind.</p>
+
+<h4>Who We Are</h4>
+<p>5-Alive is more than an organization — it is a community.<br/>
+We work tirelessly to uplift the most vulnerable, particularly LGBTQ+ individuals, young people, and those affected by poverty, chronic illness, and social exclusion. With our roots in Nakuru and Narok counties, we lead with compassion, experience, and a bold vision for change.</p>
+
+<h4>Our Mission</h4>
+<p>To advocate for inclusive community development, eliminate poverty, and expand access to quality education, health services, and psychosocial support — especially for infants, children, teenagers, and those living with chronic, non-communicable diseases.</p>
+
+<h4>Our Vision</h4>
+<p>A healthy, inclusive, and empowered society where equity, dignity, and opportunity are realities for all.
+
+<h4>Our Goals</h4>
+<p>Promote stigma-free healthcare and mental health support.
+
+Advance education and life skills for marginalized youth.
+
+Support LGBTQ+ rights and leadership development.
+
+Improve the lives of children and patients with chronic illnesses.
+
+Build sustainable, community-led solutions to poverty and exclusion.
+
+At 5-Alive, we believe that real change begins at the grassroots. And with your partnership, we can go further, reach more lives, and build a future where every person has the power to thrive.
+
+ Join us. Invest in impact. Be the change.</p>
     `;
     document.getElementById('content').innerHTML = newContent;
   }
@@ -267,7 +295,3 @@
 
 </body>
 </html>
-          
-
-
-
