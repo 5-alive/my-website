@@ -84,32 +84,69 @@
       color: #0369ee;
     }
 
-    footer, header {
+    header {
       position: relative;
-      position: sticky;
       z-index: 1;
-      padding: 40px 20px;
-      background: rgba(121, 216, 102, 0.85);
-      text-align: center;
-      color: #ffffff;
-      margin-top: 60px;
-      text-align: right;
-    }
-
-    footer a {
-      color: #0e0f0f;
-      margin: 0 10px;
-      font-weight: 500;
-
-    header a {
-      color: #0c0c0c;
-      margin: 0 10px;
-      font-weight: 500;
+      padding: 20px 40px;
+      background: #2d6634;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
     }
 
-    footer a:hover {
-      color: #1abc9c;
+    header h1 {
+      color: #ffffff;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    header nav a {
+      color: #e8fbe3;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    header nav a:hover {
+      color: #a4ffd6;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      background: #245429;
+      color: #e0e0e0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer .footer-links {
+      margin-bottom: 20px;
+    }
+
+    footer .footer-links a {
+      margin: 0 12px;
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer .footer-links a:hover {
+      color: #a4ffd6;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      color: #ccc;
     }
 
     @media (max-width: 768px) {
@@ -117,64 +154,73 @@
         font-size: 2rem;
       }
 
-      h2, h3{
+      h2, h3 {
         font-size: 1.5rem;
         color: #FFFF00;
+      }
+
+      header nav {
+        flex-direction: column;
+        gap: 10px;
       }
     }
   </style>
 </head>
 <body>
 
-     <header>
-    <h1>5 Alive Community Initiatives</h1><br/><br/>
-      <a href="page 22.html" target="_blank">5 Alive Community-Based...</a> |
-      <a href="index.html" target="_blank">Showcasing the Impact</a> |
-      <a href="page 21.html" target="_blank">Partnering for Progress</a> |
-      <a href="page 26.html" target="_blank">The Road So Far</a> |
+  <header>
+    <h1>5 Alive Community Initiatives</h1>
+    <nav>
+      <a href="page 22.html" target="_blank">5 Alive Community-Based...</a>
+      <a href="index.html" target="_blank">Showcasing the Impact</a>
+      <a href="page 21.html" target="_blank">Partnering for Progress</a>
+      <a href="page 26.html" target="_blank">The Road So Far</a>
       <a href="page 24.html" target="_blank">Our Team</a>
-     </header>
+    </nav>
+  </header>
+
   <main> 
     <h2>Empowering the LGBTQ+ Community</h2>
-<p>At 5-Alive Development Organization, empowerment isn't just a mission it's a movement. Born from lived experiences and fueled by passion, we are a youth-led, grassroots initiative breaking down barriers to healthcare, dignity, and justice for LGBTQ+ individuals in Kenya. In communities where being LGBTQ+ can mean isolation, discrimination, or worse, 5-Alive creates safe spaces, sparks bold conversations, and delivers life-changing services — from stigma-free HIV care and mental health support to leadership training and economic empowerment.</p>
-<h3>Why Your Support Matters</h3>
-<p>
-Every donation, partnership, and act of solidarity helps us:<br/>
-<ul>
-<li>Reach underserved LGBTQ+ youth with affirming health and psychosocial support.</li>
-<li>Train peer educators and community leaders to challenge stigma from within.</li>
-<li>Build bridges between the community and institutions that have long excluded them.</li>
-<li>Change narratives, influence policy, and protect rights that are too often ignored.</li>
-</ul>
+    <p>At 5-Alive Development Organization, empowerment isn't just a mission it's a movement. Born from lived experiences and fueled by passion, we are a youth-led, grassroots initiative breaking down barriers to healthcare, dignity, and justice for LGBTQ+ individuals in Kenya. In communities where being LGBTQ+ can mean isolation, discrimination, or worse, 5-Alive creates safe spaces, sparks bold conversations, and delivers life-changing services — from stigma-free HIV care and mental health support to leadership training and economic empowerment.</p>
+    
+    <h3>Why Your Support Matters</h3>
+    <p>
+      Every donation, partnership, and act of solidarity helps us:
+    </p>
+    <ul>
+      <li>Reach underserved LGBTQ+ youth with affirming health and psychosocial support.</li>
+      <li>Train peer educators and community leaders to challenge stigma from within.</li>
+      <li>Build bridges between the community and institutions that have long excluded them.</li>
+      <li>Change narratives, influence policy, and protect rights that are too often ignored.</li>
+    </ul>
 
-<p>We don’t just respond to crises we build resilience. We don’t just tell stories we rewrite futures.</p>
+    <p>We don’t just respond to crises we build resilience. We don’t just tell stories we rewrite futures.</p>
 
-<p>
-<b><i>Join Us in Driving Lasting Change</b></i>
-<br/>
-If you believe in dignity for all, inclusion without exception, and communities where everyone can thrive  then you're already part of our mission.
-</p>
-<p>
-<b><i> Empower, Educate and Elevate.</b></i><br/>
-Together, we can ignite hope and transform lives.
-</p>
+    <p>
+      <b><i>Join Us in Driving Lasting Change</b></i><br/>
+      If you believe in dignity for all, inclusion without exception, and communities where everyone can thrive  then you're already part of our mission.
+    </p>
+
+    <p>
+      <b><i> Empower, Educate and Elevate.</b></i><br/>
+      Together, we can ignite hope and transform lives.
+    </p>
   </main>
 
   <footer>
-<!--
-    <div>
-      <a href="page 2.html" target="_blank">5 Alive Community-Based...</a> |
-      <a href="page 3.html" target="_blank">Showcasing the Impact</a> |
-      <a href="page 5.html" target="_blank">Partnering for Progress</a> |
-      <a href="page 6.html" target="_blank">The Road So Far</a>
+ <div style="display: flex; align-items: center; gap: 0.7rem;">
+    <h3>5 Alive.org</h3>
+   <a href="index.html" target="_blank"> <img src="5 Alive Icon~2.jpg" alt="5 Alive Logo" style="height: 40px; width: 40px;" /></a>
+  </div>
+    <div class="footer-links">
+      <a href="page 22.html" target="_blank">5 Alive Community-Based...</a>
+      <a href="index.html" target="_blank">Showcasing the Impact</a>
+      <a href="page 21.html" target="_blank">Partnering for Progress</a>
+      <a href="page 26.html" target="_blank">The Road So Far</a>
+      <a href="page 24.html" target="_blank">Our Team</a>
     </div>
-
-    <br/>
-    <p>
-      5 Alive is a non-profit organization helping marginalized groups including LGBTQIA+ youth, the elderly, AGYW, and more. We offer support in mental health, rights advocacy, and HIV prevention.
-    </p>
--->
     <p>&copy; 2025 5 Alive Development Community-Based Organization. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
